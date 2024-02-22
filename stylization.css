@@ -1,0 +1,109 @@
+html{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #0f231b;
+    background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+@font-face {
+    font-family: "Emeritus";
+    src:
+      local("Emeritus"),
+      url("Emeritus-Display.otf") format("opentype")
+     
+  }
+
+  @font-face {
+    font-family: "Nicola";
+    src:
+      local("Nicola"),
+      url("Nicola-Regular-Trial.otf") format("opentype")
+     
+  }
+
+
+.titre {
+
+font-family: Emeritus;
+top: -4vh;
+position: relative;
+color: #5ee9c0;
+font-size: 14vh;
+justify-content: center;
+display: flex;
+letter-spacing: .06em;
+font-kerning: normal;
+
+
+}
+
+.books {
+font-family: Nicola;
+color: rgb(135, 189, 251);
+font-size: 1.8vh;
+
+
+}
+
+.hex:before {
+  content: " ";
+  width: 0; height: 0;
+  border-bottom: 30px solid rgb(135, 189, 251);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -30px;
+
+}
+
+.hex {
+  margin-top: 30px;
+  width: 104px;
+  height: 60px;
+  background-color: rgb(135, 189, 251);
+  position: relative;
+  top: 3vh;
+  left: 1.5vw;
+
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid rgb(135, 189, 251);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+
+
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: flex-start; /* Align items at the start */
+  align-items: flex-start; /* Align items at the start */
+  color: rgb(135, 189, 251);
+
+}
+
+.svg-container {
+  width: 22vw;
+  height: 30vh;
+  overflow: visible;
+  margin-right: 0px; /* Add some space between SVGs */
+  color: rgb(135, 189, 251);
+
+}
+
+.text {
+  text-anchor: left;
+  text-transform: uppercase;
+  font-family: Nicola;
+font-size: 2vh;
+fill:  rgb(135, 189, 251); 
+  display: none; /* Initially hide text */
+}
